@@ -54,6 +54,4 @@ class Player_2(GameSprite):
         if keys[K_D] and self.rect.x < win_width - 80:
             self.rect.x += self.speed
  
-    def fire(self):
-        bullet = Bullet(img_bullet, self.rect.centerx, self.rect.top, 15, 20, -15)
-        bullets.add(bullet)
+
