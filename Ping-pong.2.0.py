@@ -11,6 +11,11 @@ window = display.set_mode((win_width, win_height))
 
 win_width = 1000
 win_height = 700
+
+background = transform.scale(image.load(img_fon), (700, 500))
+wall_1 = Player_1(img_wall, 30, 200, 4, 50, 150 )
+wall_2 = Player_2(img_wall, 30, 200, 4, 50, 150 )
+
 class GameSprite(sprite.Sprite):
  
     def __init__(self, player_image, player_x, player_y, size_x, size_y, player_speed):
